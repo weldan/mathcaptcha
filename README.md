@@ -22,7 +22,7 @@
     
    public function captchaProcess() {
        echo "entered answer: ".$this->request->data['captcha_answer']."<br>";
-       echo "real answer: ".$this->MathCapthca->getAnswer()."<br>";
+       echo "real answer: ".$this->MathCaptcha->getAnswer()."<br>";
        exit;
    }
  
