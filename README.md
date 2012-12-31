@@ -1,4 +1,3 @@
-
   Math Captcha CakePHP component 
  
   Weldan Jamili (mweldan@gmail.com)
@@ -8,8 +7,10 @@
   1. Put this file in your application app/Controller/Component dir 
   2. Use it.
  
-  Example:
-    //in controller  
+  Example: 
+   
+    ```php
+    // in controller 
     public $components = array(
         'MathCaptcha'
     );
@@ -25,15 +26,16 @@
        exit;
    }
  
-   //in view form  
+   // in view form  
  
  
   <fieldset>
   <legend>Answer this question:</legend>
-  <form method="post" action="/tasks/captchaProcess">
+  <form method="post" action="/controllerName/captchaProcess">
   <label><?php echo (isset($question)) ? $question : ''; ?></label>
   <input type="text" name="captcha_answer">
   <input type="submit">
   </form>
   </fieldset>
+  ```
   
